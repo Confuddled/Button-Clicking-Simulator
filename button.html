@@ -1,0 +1,13 @@
+<html>
+    <h1>Button clicking simulator</h1>
+    <p>Click button to win</p>
+    <script>
+        var wins = 0;
+        function button_clicked(){
+            wins++;
+            document.querySelector("#wins").innerHTML = "you have "+wins+" wins"
+
+        }
+    </script>
+    <p id="wins">you have 0 wins</p>
+    <button onclick="button_clicked()">button</button>
